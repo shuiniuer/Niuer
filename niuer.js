@@ -42,6 +42,7 @@ Niuer.prototype.html = function (str,append) {
 	return this;
 }
 //为选中元素绑定click事件的方法
+//关于事件后期会专门优化
 Niuer.prototype.click = function (fn) {
 	for (var i = 0; i < this.elements.length; i ++) {
 		this.elements[i].onclick = fn;
