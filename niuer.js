@@ -31,7 +31,7 @@ Niuer.prototype.getByName=function(name){
 //只做了简单的css属性赋值和取值操作
 Niuer.prototype.css = function (attr, value) {
 	for (var i = 0; i < this.elements.length; i ++) {//返回计算后的css属性值
-		if (arguments.length == 1) {
+		if (arguments.length == 1) {//如果只有一个参数返回获取到的第一个元素的attr的值
 			if (typeof window.getComputedStyle != 'undefined') {//W3C
 				return window.getComputedStyle(this.elements[i], null)[attr];
 			} else if (typeof this.elements[i].currentStyle != 'undeinfed') {//IE
@@ -39,6 +39,31 @@ Niuer.prototype.css = function (attr, value) {
 			}
 		}
 		this.elements[i].style[attr] = value;
+	}
+	return this;
+}
+
+//获取某一个元素
+Niuer.prototype.getElement = function (num) {	
+	var element = this.elements[num];
+	this.elements = [];
+	this.elements[0] = element;
+	return this;
+};
+
+//通过CLASS获取元素数组
+Niuer.prototype.getByClass = function (className, idName) {
+	var node = null;
+	if (arguments.length == 2) {
+		node = document.getElementById(idName);
+	} else {
+		node = document;
+	}
+	var all = node.getElementsByTagName('*');
+	for (var i = 0; i < all.length; i ++) {
+		if (all[i].className == className) {
+			this.elements.push(all[i]);
+		}
 	}
 	return this;
 }
