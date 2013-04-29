@@ -9,7 +9,7 @@ Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer
 Niuer(牛耳)库在线调用地址：<a href="https://raw.github.com/shuiniuer/Niuer/master/niuer.js" target="_blank">https://raw.github.com/shuiniuer/Niuer/master/niuer.js</a>
 <br/>
 <br/>
-===============================Niuer的调用方式===2013-4-29======================<br/>
+===============================Niuer的调用方式=========================<br/>
 注意:下文中niuer和Niuer的区别。<br/>
 Niuer库的调用方式很简单，和jQuery的调用方式一样:niuer().fn()（fn代表你要调用的方法名），同时也支持链式调用，如:niuer().fn1().fn2()。<br/>
 现在支持niuer(this)的方式来创建以当前正在操作的元素来创建新的Niuer对象。<br/>
