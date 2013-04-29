@@ -6,6 +6,8 @@ Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/ar
 <br/>
 Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer/blob/master/niuer.js" target="_blank">https://github.com/shuiniuer/Niuer/blob/master/niuer.js</a>
 <br/>
+Niuer(牛耳)库在线调用地址：<a href="https://raw.github.com/shuiniuer/Niuer/master/niuer.js" target="_blank">https://raw.github.com/shuiniuer/Niuer/master/niuer.js</a>
+<br/>
 <br/>
 ===============================Niuer的调用方式===2013-4-29======================<br/>
 注意:下文中niuer和Niuer的区别。<br/>
@@ -34,3 +36,5 @@ Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她
 <br/>
 Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a><br/>
 Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer/blob/master/niuer.js" target="_blank">https://github.com/shuiniuer/Niuer/blob/master/niuer.js</a>
+<br/>
+Niuer(牛耳)库在线调用地址：<a href="https://raw.github.com/shuiniuer/Niuer/master/niuer.js" target="_blank">https://raw.github.com/shuiniuer/Niuer/master/niuer.js</a>
