@@ -4,6 +4,8 @@ Niuer
 自己动手写一个简单的库，主要目的是为了提升自己的JavaScript能力，以学习的姿态先学会造轮子，然后才能更好地运用市面上先进的轮子。当然一个人的精力毕竟有限，Niuer不会有jQuery那么强大，希望后期有同学能和我一起优化，说不一定哪一天Niuer就火了呢！！！<br/>
 Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a>
 <br/>
+Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer/blob/master/niuer.js" target="_blank">https://github.com/shuiniuer/Niuer/blob/master/niuer.js</a>
+<br/>
 <br/>
 ===============================Niuer的调用方式===2013-4-29======================<br/>
 注意:下文中niuer和Niuer的区别。<br/>
@@ -30,4 +32,5 @@ Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她
 </div>
 <br/>
 <br/>
-Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a>
+Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a><br/>
+Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer/blob/master/niuer.js" target="_blank">https://github.com/shuiniuer/Niuer/blob/master/niuer.js</a>
