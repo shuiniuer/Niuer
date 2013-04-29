@@ -10,7 +10,7 @@ Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/ar
 Niuer库的调用方式很简单，和jQuery的调用方式一样:niuer().fn()（代表你要调用的方法名），同时也支持链式调用，如:niuer().fn1().fn2()。<br/>
 现在支持niuer(this)的方式来创建以当前正在操作的元素来创建新的Niuer对象。<br/>
 现在支持的方法列表:<br/>
-<div style="padding-left:20px;line-height:20px;color:green;font-weight:700">
+<div style="padding-left:20px;line-height:20px;">
 getById(id) 通过id获取节。串<br/>
 getByTagName(tag) 通过标签名获取节点。<br/>
 getByName(name) 通过属性名获取节点。<br/>
