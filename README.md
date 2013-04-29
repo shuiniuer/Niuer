@@ -3,7 +3,7 @@ Niuer
 
 自己动手写一个简单的库，主要目的是为了提升自己的JavaScript能力，以学习的姿态先学会造轮子，然后才能更好地运用市面上先进的轮子。当然一个人的精力毕竟有限，Niuer不会有jQuery那么强大，希望后期有同学能和我一起优化，说不一定哪一天Niuer就火了呢！！！<br/>
 
-==========================================Niuer的调用方式====================2013-4-29======================<br/>
+===============================Niuer的调用方式===2013-4-29======================<br/>
 注意:下文中niuer和Niuer的区别。<br/>
 Niuer库的调用方式很简单，和jQuery的调用方式一样:niuer().fn()（代表你要调用的方法名），同时也支持链式调用，如:niuer().fn1().fn2()。<br/>
 现在支持niuer(this)的方式来创建以当前正在操作的元素来创建新的Niuer对象。<br/>
@@ -24,3 +24,7 @@ show() 显示元素的方法。<br/>
 hide() 隐藏元素的方法。<br/>
 click(fn) 为选中素绑定click事件的方法，fn是一个Function。<br/>
 Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她会强大起来。<br/>
+
+<br/>
+<br/>
+Niuer(牛耳)zip库下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a>
