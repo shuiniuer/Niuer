@@ -1,5 +1,5 @@
 var niuer=(function(){
-	function Niuer() {
+	function Niuer(_this) {
 		//创建一个数组，来保存获取的节点和节点数组
 		this.elements = [];
 		if (_this != undefined) {//如果传入了this则是基于当前传入的元素创建一个Niuer对象
