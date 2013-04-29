@@ -13,9 +13,9 @@ Niuer库的调用方式很简单，和jQuery的调用方式一样:niuer().fn()�
 现在支持niuer(this)的方式来创建以当前正在操作的元素来创建新的Niuer对象。<br/>
 现在支持的方法列表:<br/>
 <div style="padding-left:20px;line-height:20px;">
-getById(id) 通过id获取节。串<br/>
-getByTagName(tag) 通过标签名获取节点。<br/>
-getByName(name) 通过属性名获取节点。<br/>
+getById(id) 通过id获取节点元素<br/>
+getByTagName(tag) 通过标签名获取节点元素。<br/>
+getByName(name) 通过属性名获取节点元素。<br/>
 getByClass(className,idName) 通过class获取元素，idName为可选参数。<br/> 
 css(attr,value)操作css的方法，value为可选参数，value存在表示为赋值操作，不存在表示取值操作。<br/>
 addClass(className)添加class的方法。<br/>
