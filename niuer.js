@@ -173,7 +173,7 @@ var niuer=(function(){
 		return this;
 	}
 
-	//触发浏览器窗口事件
+	//触发浏览器窗口resize事件
 	Niuer.prototype.resize = function (fn) {
 		window.onresize = fn;
 		return this;
