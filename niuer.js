@@ -1,5 +1,5 @@
 var niuer=(function(){
-	function Niuer(_this) {
+	function Niuer() {
 		//创建一个数组，来保存获取的节点和节点数组
 		this.elements = [];
 		if (_this != undefined) {//如果传入了this则是基于当前传入的元素创建一个Niuer对象
@@ -162,6 +162,22 @@ var niuer=(function(){
 		return this;
 	}
 
+	//设置元素在浏览器窗口垂直左右居中
+	Niuer.prototype.center = function (width, height) {
+		var top = (document.documentElement.clientHeight - width) / 2;
+		var left = (document.documentElement.clientWidth - height) / 2;
+		for (var i = 0; i < this.elements.length; i ++) {
+			this.elements[i].style.top = top + 'px';
+			this.elements[i].style.left = left + 'px';
+		}
+		return this;
+	}
+
+	//触发浏览器窗口事件
+	Niuer.prototype.resize = function (fn) {
+		window.onresize = fn;
+		return this;
+	}
 	return function(_this){
 		return new Niuer(_this);
 	}
