@@ -30,6 +30,8 @@ Niuer库的调用方式很简单，和jQuery的调用方式一样:<b>niuer().fn(
 13、<b>show()</b> 显示元素的方法。<br/>
 14、<b>hide()</b> 隐藏元素的方法。<br/>
 15、<b>click(fn)</b> 为选中素绑定click事件的方法，fn是一个Function。<br/>
+16、<b>center(width,height)</b> 设置元素在浏览器窗口垂直左右居中的方法。width和height均为数字<br/>
+17、<b>resize(fn)</b> 触发浏览器窗口resize事件的方法，fn是一个Function。<br/>
 Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她会强大起来。<br/>
 </div>
 <br/>
