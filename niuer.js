@@ -204,12 +204,12 @@ var niuer=(function(){
 		}
 		function callback() {
 			if (xhr.status == 200) {
-				obj.success(xhr.responseText);			//回调传递参数
+				obj.success(xhr.responseText);//回调传递参数
 			} else {
 				alert('获取数据错误！错误代号：' + xhr.status + '，错误信息：' + xhr.statusText);
 			}	
 		}
-		return this;
+		return this;//这一块儿有点儿乱，到底用不用返回this？是为每个对象创建一个ajax对象，还是只需要一个全局的就可以了呢？
 	}
 
 	//工具函数不对外开放
