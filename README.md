@@ -12,7 +12,7 @@ Niuer(牛耳)库在线调用地址：<a href="https://raw.github.com/shuiniuer/N
 ===============================Niuer的调用方式=========================<br/>
 注意:下文中niuer和Niuer的区别。<br/>
 Niuer库的调用方式很简单，和jQuery的调用方式一样:<b>niuer().fn()</b>（fn代表你要调用的方法名），同时也支持链式调用，如:<b>niuer().fn1().fn2()</b>。<br/>
-现在支持niuer(this)的方式来创建以当前正在操作的元素来创建新的Niuer对象。<br/>
+现在支持以niuer(this)的方式用当前正在操作的元素来创建新的Niuer对象。<br/>
 现在支持的方法列表:<br/>
 <div>
 1、<b>getById(id)</b> 通过id获取节点元素<br/>
