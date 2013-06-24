@@ -376,7 +376,7 @@ niuer.outerTools={
 /*====================标准化事件管理========================*/
 //为每个事件分配一个计数器
 niuer.addEvent.ID = 1;
-niuer.addEvent(obj, type, fn) {
+niuer.addEvent=function(obj, type, fn) {
 	if (typeof obj.addEventListener != 'undefined') {
 		obj.addEventListener(type, fn, false);
 	} else {
@@ -428,7 +428,7 @@ niuer.addEvent.fixEvent.stopPropagation = function () {
 	this.cancelBubble = true;
 };
 //跨浏览器删除事件
-niuer.removeEvent(obj, type, fn) {
+niuer.removeEvent=function(obj, type, fn) {
 	if (typeof obj.removeEventListener != 'undefined') {
 		obj.removeEventListener(type, fn, false);
 	} else {
