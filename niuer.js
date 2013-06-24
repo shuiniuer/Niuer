@@ -374,8 +374,6 @@ niuer.outerTools={
 
 
 /*====================标准化事件管理========================*/
-//为每个事件分配一个计数器
-niuer.addEvent.ID = 1;
 niuer.addEvent=function(obj, type, fn) {
 	if (typeof obj.addEventListener != 'undefined') {
 		obj.addEventListener(type, fn, false);
@@ -398,6 +396,8 @@ niuer.addEvent=function(obj, type, fn) {
 		obj['on' + type] = addEvent.exec;
 	}
 }
+//为每个事件分配一个计数器
+niuer.addEvent.ID = 1;
 //执行事件处理函数
 niuer.addEvent.exec = function (event) {
 	var e = event || addEvent.fixEvent(window.event);
