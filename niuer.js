@@ -322,7 +322,7 @@ var niuer = (function() {
 })();
 
 /*====================对外开放的工具函数========================*/
-niuer.niuer.outerTools={
+niuer.outerTools={
 	//把键值对转换为‘name=niuer&pass=niuer’形式的字符串
 	params:function(data) {
 		var arr = [];
