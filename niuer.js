@@ -36,7 +36,7 @@ var niuer = (function() {
 	Niuer.prototype.css = function(attr, value) {
 		for (var i = 0; i < this.elements.length; i ++) {
 		if (arguments.length == 1) {
-				return outerTools.getStyle(this.elements[i], attr);
+				return niuer.outerTools.getStyle(this.elements[i], attr);
 			}
 			this.elements[i].style[attr] = value;
 		}
@@ -46,7 +46,7 @@ var niuer = (function() {
 	//添加Class
 	Niuer.prototype.addClass = function(className) {
 		for (var i = 0; i < this.elements.length; i ++) {
-		if (!outerTools.hasClass(this.elements[i], className)) {
+		if (!niuer.outerTools.hasClass(this.elements[i], className)) {
 			this.elements[i].className += ' ' + className;
 		}
 	}
@@ -56,7 +56,7 @@ var niuer = (function() {
 	//移除Class
 	Niuer.prototype.removeClass = function(className) {
 		for (var i = 0; i < this.elements.length; i++) {
-			if (outerTools.hasClass(this.elements[i], className)) {
+			if (niuer.outerTools.hasClass(this.elements[i], className)) {
 				this.elements[i].className = this.elements[i].className.replace(new RegExp('(\\s|^)' + className + '(\\s|$)'), ' ');
 			}
 		}
@@ -152,8 +152,8 @@ var niuer = (function() {
 
 	//设置元素在浏览器窗口垂直左右居中
 	Niuer.prototype.center = function(width, height) {
-		var top = (outerTools.getInner().width - width) / 2;
-		var left = (outerTools.getInner().height - height) / 2;
+		var top = (niuer.outerTools.getInner().width - width) / 2;
+		var left = (niuer.outerTools.getInner().height - height) / 2;
 		for (var i = 0; i < this.elements.length; i++) {
 			this.elements[i].style.top = top + 'px';
 			this.elements[i].style.left = left + 'px';
@@ -164,8 +164,8 @@ var niuer = (function() {
 	//锁屏
 	Niuer.prototype.lock = function () {
 		for (var i = 0; i < this.elements.length; i ++) {
-			this.elements[i].style.width = outerTools.getInner().width + 'px';
-			this.elements[i].style.height = outerTools.getInner().height + 'px';
+			this.elements[i].style.width = niuer.outerTools.getInner().width + 'px';
+			this.elements[i].style.height = niuer.outerTools.getInner().height + 'px';
 			this.elements[i].style.display = 'block';
 			document.documentElement.style.overflow = 'hidden';
 		}
@@ -187,11 +187,11 @@ var niuer = (function() {
 			var element = this.elements[i];
 			window.onresize = function () {
 				fn();
-				if (element.offsetLeft > outerTools.getInner().width - element.offsetWidth) {
-					element.style.left = outerTools.getInner().width - element.offsetWidth + 'px';
+				if (element.offsetLeft > niuer.outerTools.getInner().width - element.offsetWidth) {
+					element.style.left = niuer.outerTools.getInner().width - element.offsetWidth + 'px';
 				}
-				if (element.offsetTop > outerTools.getInner().height - element.offsetHeight) {
-					element.style.top = outerTools.getInner().height - element.offsetHeight + 'px';
+				if (element.offsetTop > niuer.outerTools.getInner().height - element.offsetHeight) {
+					element.style.top = niuer.outerTools.getInner().height - element.offsetHeight + 'px';
 				}
 			};
 		}
@@ -203,7 +203,7 @@ var niuer = (function() {
 		for (var i = 0; i < this.elements.length; i ++) {
 			this.elements[i].onmousedown = function (e) {
 				preDef(e);
-				var e = outerTools.getEvent(e);
+				var e = niuer.outerTools.getEvent(e);
 				var _this = this;
 				var diffX = e.clientX - _this.offsetLeft;
 				var diffY = e.clientY - _this.offsetTop;
@@ -211,7 +211,7 @@ var niuer = (function() {
 					_this.setCapture();
 				} 
 				document.onmousemove = function (e) {
-					var e = outerTools.getEvent(e);
+					var e = niuer.outerTools.getEvent(e);
 					var left = e.clientX - diffX;
 					var top = e.clientY - diffY;
 					if (left < 0) {
@@ -322,7 +322,7 @@ var niuer = (function() {
 })();
 
 /*====================对外开放的工具函数========================*/
-niuer.outerTools={
+niuer.niuer.outerTools={
 	//把键值对转换为‘name=niuer&pass=niuer’形式的字符串
 	params:function(data) {
 		var arr = [];
