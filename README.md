@@ -39,4 +39,4 @@ Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她
 Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a><br/>
 Niuer(牛耳)库代码查看地址：<a href="https://github.com/shuiniuer/Niuer/blob/master/niuer.js" target="_blank">https://github.com/shuiniuer/Niuer/blob/master/niuer.js</a>
 <br/>
-Niuer(牛耳)库在线调用地址：<a href="https://raw.github.com/shuiniuer/Niuer/master/niuer.js" target="_blank">https://raw.github.com/shuiniuer/Niuer/master/niuer.js</a>
+Niuer(牛耳)库在线调用地址：<a href="https://rawgithub.com/shuiniuer/Niuer/master/niuer.js" target="_blank">https://rawgithub.com/shuiniuer/Niuer/master/niuer.js</a>
