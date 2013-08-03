@@ -289,7 +289,7 @@ var niuer = (function() {
 							attr == 'opacity' ? parseFloat(getStyle(element, attr)) * 100 : 
 													   parseInt(getStyle(element, attr));
 			
-			var t = obj['t'] != undefined ? obj['t'] : 30;//可选，默认30毫秒执行一次
+			var t = obj['time'] != undefined ? obj['time'] : 30;//可选，默认30毫秒执行一次
 			var step = obj['step'] != undefined ? obj['step'] : 10;//可选，每次运行10像素
 			
 			var alter = obj['alter'];

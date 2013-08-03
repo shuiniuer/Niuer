@@ -33,6 +33,21 @@ Niuer库的调用方式很简单，和jQuery的调用方式一样:<b>niuer().fn(
 16、<b>center(width,height)</b> 设置元素在浏览器窗口垂直左右居中的方法。width和height均为数字<br/>
 17、<b>resize(fn)</b> 触发浏览器窗口resize事件的方法，fn是一个Function。<br/>
 18、<b>ajax(obj)</b> 异步请求的ajax方法，obj是一个key-value的对象。<br/>
+19、<b>animate(obj)</b> 动画方法，obj是一个key-value的对象。<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;动画的使用方法:
+<pre>
+	animate({
+		attr:'',//动画属性，大小(w||h)，位置(x||y)，透明度(0)
+		start:'',//初始状态，整数
+		time:'',//步时，每一次变化间隔的时间，整数（毫秒）
+		step:'',//步值，每一次变化的数值，整数
+		alter:'',//变化值，整数
+		target:'',//目标状态，整数
+		speed:'',//动画的速度，整数
+		type:''//是否有缓动的效果:0不缓动，1缓动
+		
+	});
+</pre>
 Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她会强大起来。<br/>
 </div>
 <br/>
