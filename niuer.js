@@ -286,8 +286,8 @@ var niuer = (function() {
 
 			
 			var start = obj['start'] != undefined ? obj['start'] : 
-							attr == 'opacity' ? parseFloat(getStyle(element, attr)) * 100 : 
-													   parseInt(getStyle(element, attr));
+							attr == 'opacity' ? parseFloat(niuer.outerTools.getStyle(element, attr)) * 100 : 
+													   parseInt(niuer.outerTools.getStyle(element, attr));
 			
 			var t = obj['time'] != undefined ? obj['time'] : 30;//可选，默认30毫秒执行一次
 			var step = obj['step'] != undefined ? obj['step'] : 10;//可选，每次运行10像素
@@ -318,20 +318,20 @@ var niuer = (function() {
 			timer = setInterval(function () {
 			
 				if (type == 'buffer') {
-					step = attr == 'opacity' ? (target - parseFloat(getStyle(element, attr)) * 100) / speed ://透明度
-														 (target - parseInt(getStyle(element, attr))) / speed;//长度
+					step = attr == 'opacity' ? (target - parseFloat(niuer.outerTools.getStyle(element, attr)) * 100) / speed ://透明度
+														 (target - parseInt(niuer.outerTools.getStyle(element, attr))) / speed;//长度
 					step = step > 0 ? Math.ceil(step) : Math.floor(step);
 				}
 				
 				if (attr == 'opacity') {
 					if (step == 0) {
 						setOpacity();
-					} else if (step > 0 && Math.abs(parseFloat(getStyle(element, attr)) * 100 - target) <= step) {
+					} else if (step > 0 && Math.abs(parseFloat(niuer.outerTools.getStyle(element, attr)) * 100 - target) <= step) {
 						setOpacity();
-					} else if (step < 0 && (parseFloat(getStyle(element, attr)) * 100 - target) <= Math.abs(step)) {
+					} else if (step < 0 && (parseFloat(niuer.outerTools.getStyle(element, attr)) * 100 - target) <= Math.abs(step)) {
 						setOpacity();
 					} else {
-						var temp = parseFloat(getStyle(element, attr)) * 100;
+						var temp = parseFloat(niuer.outerTools.getStyle(element, attr)) * 100;
 						element.style.opacity = parseInt(temp + step) / 100;
 						element.style.filter = 'alpha(opacity=' + parseInt(temp + step) + ')'
 					}
@@ -339,12 +339,12 @@ var niuer = (function() {
 				} else {
 					if (step == 0) {
 						setTarget();
-					} else if (step > 0 && Math.abs(parseInt(getStyle(element, attr)) - target) <= step) {
+					} else if (step > 0 && Math.abs(parseInt(niuer.outerTools.getStyle(element, attr)) - target) <= step) {
 						setTarget();
-					} else if (step < 0 && (parseInt(getStyle(element, attr)) - target) <= Math.abs(step)) {
+					} else if (step < 0 && (parseInt(niuer.outerTools.getStyle(element, attr)) - target) <= Math.abs(step)) {
 						setTarget();
 					} else {
-						element.style[attr] = parseInt(getStyle(element, attr)) + step + 'px';
+						element.style[attr] = parseInt(niuer.outerTools.getStyle(element, attr)) + step + 'px';
 					}
 				}
 			}, t);
@@ -418,7 +418,7 @@ niuer.outerTools={
 		}
 		return arr.join('&');
 	},
-	//快浏览器获取视口大小
+	//获取浏览器视口大小
 	getInner:function() {
 		if (typeof window.innerWidth != 'undefined') {
 			return {
@@ -431,6 +431,39 @@ niuer.outerTools={
 				height : document.documentElement.clientHeight
 			}
 		}
+	},
+	// 获取地址栏的参数数组
+	getUrlParams:function(){
+		var search = window.location.search ; 
+		// 写入数据字典
+		var tmparray = search.substr(1,search.length).split("&");
+		var paramsArray = new Array; 
+		if( tmparray != null){
+			for(var i = 0;i<tmparray.length;i++){
+				var reg = /[=|^==]/;    // 用=进行拆分，但不包括==
+				var set1 = tmparray[i].replace(reg,'&');
+				var tmpStr2 = set1.split('&');
+				var array = new Array ; 
+				array[tmpStr2[0]] = tmpStr2[1] ; 
+				paramsArray.push(array);
+			}
+		}
+		// 将参数数组进行返回
+		return paramsArray ;     
+	},
+	// 根据参数名称获取参数值
+	getParamValue:function(name){
+		var paramsArray = niuer.outerTools.getUrlParams();
+		if(paramsArray != null){
+			for(var i = 0 ; i < paramsArray.length ; i ++ ){
+				for(var  j in paramsArray[i] ){
+					if( j == name ){
+						return paramsArray[i][j] ; 
+					}
+				}
+			}
+		}
+		return null ; 
 	},
 	//跨浏览器获取Style
 	getStyle:function(element, attr) {
