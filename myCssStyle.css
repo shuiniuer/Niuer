@@ -1,0 +1,12 @@
+/*清除浮动*/
+.fd-clear{clear: both;}
+.fd-clr{zoom: 1;}
+.fd-clr:after{display: block;clear: both;height: 0;content: "\0020";}
+
+/*兼容常见的IE6、IE7的CSS问题*/
+.myclass{
+	color:red;/*正常*/
+	*color:blue;/*IE7,会影响IE8Q*/
+	#color:red;/*修正被影响的IE8Q*/
+	-color:green;/*IE6专属*/
+}
