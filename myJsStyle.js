@@ -1,4 +1,4 @@
-//jQuery±Õ°üĞ´·¨
+ï»¿//jQueryé—­åŒ…å†™æ³•
 (function($){
 	function init(){
 		alert();
@@ -8,7 +8,7 @@
 	});
 })(jQuery);
 
-//µ¥ÀıÄ£Ê½
+//å•ä¾‹æ¨¡å¼
 var SingletonBuild=(function(){
 	function Singleton(args){
 		var args=args||{};
