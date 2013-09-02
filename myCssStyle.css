@@ -1,12 +1,26 @@
-/*Çå³ý¸¡¶¯*/
+/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½*/
 .fd-clear{clear: both;}
 .fd-clr{zoom: 1;}
 .fd-clr:after{display: block;clear: both;height: 0;content: "\0020";}
 
-/*¼æÈÝ³£¼ûµÄIE6¡¢IE7µÄCSSÎÊÌâ*/
+/*ï¿½ï¿½ï¿½Ý³ï¿½ï¿½ï¿½ï¿½ï¿½IE6ï¿½ï¿½IE7ï¿½ï¿½CSSï¿½ï¿½ï¿½ï¿½*/
 .myclass{
-	color:red;/*Õý³£*/
-	*color:blue;/*IE7,»áÓ°ÏìIE8Q*/
-	#color:red;/*ÐÞÕý±»Ó°ÏìµÄIE8Q*/
-	-color:green;/*IE6×¨Êô*/
+	color:red;/*ï¿½ï¿½ï¿½ï¿½*/
+	*color:blue;/*IE7,ï¿½ï¿½Ó°ï¿½ï¿½IE8Q*/
+	#color:red;/*ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ó°ï¿½ï¿½ï¿½ï¿½IE8Q*/
+	-color:green;/*IE6×¨ï¿½ï¿½*/
+}
+/*é˜´å½±*/
+.shadow{
+	-webkit-box-shadow: 2px 2px 2px #d1d1d1;
+	-moz-box-shadow: 2px 2px 2px #d1d1d1;
+	box-shadow: 2px 2px 2px #d1d1d1;
+}
+/*åœ†è§’*/
+.radius{
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	border-radius: 2px;
 }
