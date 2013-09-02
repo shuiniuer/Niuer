@@ -24,3 +24,10 @@
 	-o-border-radius: 2px;
 	border-radius: 2px;
 }
+/*透明度*/
+.transparent{
+	filter:alpha(opacity=50);
+	-moz-opacity:0.5;
+	-khtml-opacity: 0.5;
+	opacity: 0.5;
+}
