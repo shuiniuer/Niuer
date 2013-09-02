@@ -1,14 +1,14 @@
-/*��������*/
+/*清楚浮动*/
 .fd-clear{clear: both;}
 .fd-clr{zoom: 1;}
 .fd-clr:after{display: block;clear: both;height: 0;content: "\0020";}
 
-/*���ݳ�����IE6��IE7��CSS����*/
+/*兼容css书写顺序*/
 .myclass{
-	color:red;/*����*/
-	*color:blue;/*IE7,��Ӱ��IE8Q*/
-	#color:red;/*������Ӱ����IE8Q*/
-	-color:green;/*IE6ר��*/
+	color:red;
+	*color:blue;/*ie7*/
+	#color:red;/*ie8Q*/
+	-color:green;/*ie6专属*/
 }
 /*阴影*/
 .shadow{
