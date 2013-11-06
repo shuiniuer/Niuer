@@ -81,7 +81,7 @@ var niuer = (function() {
 		}
 		var all = node.getElementsByTagName('*');
 		for (var i = 0; i < all.length; i++) {
-			if (all[i].className == className) {
+			if (all[i].className.indexOf(className)>-1) {
 				this.elements.push(all[i]);
 			}
 		}
