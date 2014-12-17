@@ -48,7 +48,6 @@ Niuer库的调用方式很简单，和jQuery的调用方式一样:<b>niuer().fn(
 		
 	});
 </pre>
-Niuer库才刚刚开始，功能和性能还很弱，但是我相信总有天她会强大起来。<br/>
 </div>
 <br/>
 Niuer(牛耳)库zip下载地址：<a href="https://github.com/shuiniuer/Niuer/archive/master.zip" target="_blank">https://github.com/shuiniuer/Niuer/archive/master.zip</a><br/>
